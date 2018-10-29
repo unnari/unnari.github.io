@@ -29,9 +29,9 @@ function draw(){
   fill(255);
   arc(x, y+10, faceWidth/5, faceHeight/4, 0, PI);
   //.....kóði sem staðsetur augun m.v. x, y, faceWidth og faceHeight ætti að koma hér.
-  
+
 }
-tóti er fá
+
 function mousePressed(){
   //Í hvert sinn sem músinni er smellt fá breyturnar ný gildi.
   faceWidth  = random(75,  150);
