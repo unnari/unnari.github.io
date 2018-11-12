@@ -18,23 +18,20 @@ function setup() {
 
 function draw() {
   background(333,33,10);
-	// Reikna ný hnit út frá hraða boltans:
   x = x + hradiX;
   y = y + hradiY;
-	// Athuga hvort boltinn snertir veggi:
   if ((x > width-bolti/2) || (x < bolti/2))  {
     hradiX = hradiX * -1;
   }
   if ((y > height-bolti/2) || (y < bolti)) {
     hradiY = hradiY * -1;
   }
-	// Athuga hvort bolti snertir spaða:
-	// abs() táknar algildi/tölugildi
-	if(abs(spadiY - y) < bolti/2 + spadiThykkt/2 && abs(mouseX - x) < bolti/2 + spadiBreidd/2){
+
+  if(abs(spadiY - y) < bolti/2 + spadiThykkt/2 && abs(mouseX - x) < bolti/2 + spadiBreidd/2){
     hradiY = hradiY * -1;
 		stig = stig + 1;
 	}
-	// Teikna boltann, spaðann og stigin
+
   fill(255,255,0);
   rect(x, y, bolti, bolti);
 	rect(mouseX,spadiY ,spadiBreidd,spadiThykkt);
