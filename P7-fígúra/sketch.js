@@ -4,23 +4,26 @@ function setup() {
 
 function draw() {
   background(255,200,0);
-  zoog();
+  fígúra();
 }
 
-// Teiknar geimveruna zoog
-function zoog(){
+function fígúra(){
   rectMode(CENTER);
   // Teiknum búkinn
-  fill(236,36,94);
-  rect(200,200,40,100);
+  fill(44,44,44);
+  rect(200,200,70,100);
   // Teiknum hausinn
   fill(255);
   ellipse(200,150, 80,80);
   // Teiknum augun
-  fill(100);
-  ellipse (175,150, 20,40);
-  ellipse (225,150, 20,40);
+  fill(200);
+  ellipse (175,145, 20,25);
+  ellipse (225,145, 20,25);
+  //Munnur
+  fill(236,36,94);
+  ellipse(200,170, 25, 20);
   // Teiknum fæturna
   line (180, 250, 180, 300);
   line (220, 250, 220, 300);
+  line (200, 250, 200, 270);
 }
