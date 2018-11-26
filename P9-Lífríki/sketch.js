@@ -2,21 +2,21 @@ var unnsi, unnsi2, unnsi3
 
 function setup() {
   createCanvas(600,600);
-  Uaquok1 = new Uaquok(150,150,150,100,150);
-  Uaquok2 = new Uaquok(100,100,30,120,100);
-  Uaquok3 = new Uaquok(350,300,250,150,50);
+  unnsi = new Unnsi(150,150,150,100,150);
+  unnsi2 = new Unnsi(100,100,30,120,100);
+  unnsi3 = new Unnsi(350,300,250,150,50);
 }
 
 function draw() {
   background(234,124,21);
   fill(532,123,43);
 	ellipse(300,300,500,500);
-  Uaquok1.move();
-  Uaquok1.show();
-  Uaquok2.move();
-  Uaquok2.show();
-  Uaquok3.move();
-  Uaquok3.show();
+  unnsi.move();
+  unnsi.show();
+  unnsi2.move();
+  unnsi2.show();
+  unnsi3.move();
+  unnsi3.show();
 }
 
 class Unnsi{
@@ -36,22 +36,23 @@ show() {
   stroke(0);
 	// búkur
 	fill(this.bukurlitur);
-	ellipse(this.x,this.y,-250,this.bukur)
+	rect(this.x,this.y,-250,this.bukur)
   // haus
 	fill(70,150,0)
-	rect(this.x,this.y - this.bukur/2, this.haus,this.haus)
+	ellipse(this.x,this.y - this.bukur/2, this.haus,this.haus)
 	//fætur
 	fill(70,150,0)
 	line (this.x - 20, this.y + this.bukur/2, this.x - 50, this.y + this.bukur/2 + 75);
   line (this.x + 20, this.y + this.bukur/2, this.x + 50, this.y + this.bukur/2 + 75);
+  line (this.x,this.y + this.bukur/2, this.x + 0, this.y + this.bukur/2 + 40);
 	//hendur
 	fill(0)
 	line (this.x - 20, this.y , this.x - 20, this.y + 40);
   line (this.x + 20, this.y , this.x + 20, this.y + 40);
 	// augu
 	fill(0)
-	ellipse (this.x - 50,this.y - this.bukur/2, 20,40);
-  ellipse (this.x + 50,this.y - this.bukur/2, 20,40);
+	rect (this.x - 50,this.y - this.bukur/2, 20,40);
+  rect (this.x + 50,this.y - this.bukur/2, 20,40);
 
  }
 
