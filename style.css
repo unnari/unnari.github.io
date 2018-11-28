@@ -4,6 +4,34 @@ Til þess að læra að gera eitthvað, prófaðu að leita á google af því s
 "how to change link color." */
 
 body {
-  background-color: #EDF2F4;
-  color: #2B2D42;
+  background-color: #FFFF00;
+  color: #000000;
+}
+/* unvisited link */
+a:link {
+    color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+li {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
 }
